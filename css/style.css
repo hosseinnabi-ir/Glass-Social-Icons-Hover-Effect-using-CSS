@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f3f6;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0% 5%;
+}
+
+.icons .icon {
+    cursor: pointer;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: 40px;
+    transition: .3s ease-out;
+}
+
+.icons .icon:hover {
+    scale: 1.15;
+}
+
+.icons .icon .bg {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    transform: rotate(14deg);
+    transition: .3s ease-out;
+}
+
+.icons .icon:hover .bg {
+    transform: rotate(24deg);
+}
+
+.icons .icon:nth-child(1) .bg {
+    background: #c4302b;
+}
+
+.icons .icon:nth-child(2) .bg {
+    background: #0077b5;
+}
+
+.icons .icon:nth-child(3) .bg {
+    background: #34a853;
+}
+
+.icons .icon:nth-child(4) .bg {
+    background: #ff4500;
+}
+
+.icons .icon:nth-child(5) .bg {
+    background: #6159a7;
+}
+
+.icons .icon:nth-child(6) .bg {
+    background: #1d202d;
+}
+
+.icons .icon .glass {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 18px;
+}
+
+.icons .icon i {
+    font-size: 36px;
+    background: linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, .3)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
